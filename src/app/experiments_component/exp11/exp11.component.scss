@@ -1,0 +1,56 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+.col-5 {
+    text-align: center;
+    align-self: flex-end;
+    img {
+        width: 100%;
+    }
+}
+
+#Flat {
+    width: 45%;
+}
+
+#leg {
+    padding: 0;
+}
+
+#cloude {
+    opacity: 0;
+}
+
+#backVideo {
+    cursor: pointer;
+}
+
+#hitSpace {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    height: 30%;
+    margin: 0;
+}
+#hitSpace2 {
+    width: 10%;
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    height: 10%;
+    margin: 0;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#stand{
+    img{width: 100%;}
+    padding:0;
+    margin:0;
+}
+
+.workSpace .row{
+    height: 100%;
+}

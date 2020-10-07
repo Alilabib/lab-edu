@@ -1,0 +1,33 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .someZinc {
+    position: absolute;
+    bottom: 74%;
+    display: none;
+  }
+}
+
+
+#bombb {
+  position: absolute;
+  // bottom: 74%;
+  // display: none;
+  opacity: 0;
+}
+
+#hitSpace {
+  width: 10%;
+  position: absolute;
+  top: 5%;
+  right: 63%;
+  height: 10%;
+  margin: 0;
+}
+
+#cloude {
+  opacity: 0;
+}

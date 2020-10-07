@@ -1,0 +1,69 @@
+@import "../../../assets/scss/sharedExpDesign.scss";
+
+#fixedRuler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding-top: 35%;
+  #rulerHit1 {
+    top: 0%;
+    position: absolute;
+    right: 45%;
+  }
+  #rulerHit2 {
+    position: absolute;
+    bottom: 60%;
+    right: 45%;
+  }
+  img {
+    width: 20%;
+  }
+}
+
+#fixedBalance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  #balanceHit {
+    position: absolute;
+    bottom: 55%;
+    // right: 40%;
+  }
+  .weight {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+  .weight1 {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+  .weight2 {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+}
+
+
+
+#nail3 {
+  img {
+    width: 70%;
+  }
+}
+#nail2 {
+  img {
+    width: 70%;
+  }
+}
+ #nail1 {
+  img {
+    width: 52%;
+  }
+}

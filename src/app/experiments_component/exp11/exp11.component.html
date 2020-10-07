@@ -1,0 +1,82 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+    <navbar-experiment [exp_name]="title" [exp_Id]="exp_Id"></navbar-experiment>
+    <div #container class="container expermints-container" (click)="Close()">
+        <div class="d-flex  bd-highlight ">
+            <div class="p-2 w-100 bd-highlight workSpace" id="workSpace">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2" id="stand">
+                                <img data-toggle="tooltip" data-placement="left" title="حامل" src="assets/exp11/stand.png">
+                            </div>
+                            <div class="offset-1 col-6">
+                                <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+
+                                    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+
+                                        <div class="toast-body" id="drag">
+                                            قم بسحب الأدوات إلى هنا
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+
+            <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+                <div class="tools">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-5" #item id="tester">
+                            <img data-toggle="tooltip" data-placement="top" title="مخبار" src="assets/exp11/tester.png">
+                            <p id="hitSpace"></p>
+                        </div>
+
+                        <div class="col-2" #item id="leg">
+                            <img data-toggle="tooltip" data-placement="top" title="ساق زجاجيه" id="Flat" src="assets/exp11/leg.png">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-5" #item id="liquid">
+                            <img data-toggle="tooltip" data-placement="top" title="مخباربه حمض هيدروليك مركز" src="assets/exp11/testerLiquid.png">
+                        </div>
+
+                        <div class="col-5" #item id="amonium">
+                            <img data-toggle="tooltip" id="cloude" data-placement="top" title="سحابه" src="assets/exp11/cloude.png">
+                            <p id="hitSpace2"></p>
+                            <img data-toggle="tooltip" data-placement="top" title="محلول الامونيا" src="assets/exp11/amonia.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">
+                  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,145 @@
+nav {
+    .navbar-collapse {
+        justify-content: flex-end;
+        flex-grow: 0.5;
+    }
+    .d-flex {
+        flex-grow: 0.6;
+        justify-content: flex-end;
+    }
+}
+
+.header {
+    width: 100%;
+    .col-7 {
+        img {
+            position: fixed;
+            width: 60%;
+            z-index: 0;
+            top: 0;
+        }
+        .topic {
+            color: white;
+            font-size: 2.5vw;
+            position: absolute;
+            top: 4vw;
+            left: 30vw;
+        }
+        .btn {
+            position: absolute;
+            color: white;
+            border: white 1px solid;
+            border-radius: 5px;
+            background-color: #a82fb8cc;
+            top: 1vw;
+            left: 4vw;
+            padding: 1% 2%;
+            font-size: 1.1vw;
+            img {
+                width: 3vw;
+                position: absolute;
+                left: 1vw;
+            }
+        }
+    }
+    .col:nth-child(2) {
+        text-align: right;
+        padding: 1% 2% 0 0;
+        .logo {
+            width: 40%;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .d-flex {
+        margin-top: 5%;
+        width: 60%;
+    }
+}
+
+.content {
+    direction: rtl;
+    .col-2 {
+        margin: 3% 1%;
+    }
+}
+
+.exp {
+    text-align: center;
+    img {
+        width: 40%;
+    }
+    img:hover {
+        width: 50%;
+    }
+}
+
+.exp_title1 {
+    font-size: 1.1vw;
+    color: #a93b99;
+}
+
+.exp_title2 {
+    font-size: 1.1vw;
+    color: #762687;
+}
+
+.workSpace {
+    border: #61037e 3px solid;
+    border-radius: 30px;
+    margin-right: 5%;
+    height: 60vh;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .row {
+        //height: 80%;
+        align-items: center;
+    }
+    ul{
+        list-style: none;
+       li{
+        text-align: right;
+        margin: 2% 5%;
+       }
+    }
+}
+
+#video {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+}
+
+.tools {
+    background-color: #f2f2f2;
+    box-shadow: 3px 3px #b5b5b5;
+    width: 18vw;
+    height: 50vh;
+    padding: 3%;
+    overflow: auto;
+    ul {
+        list-style: none;
+        li {
+            margin: 5% 0;
+            text-align: center;
+        }
+    }
+}
+
+.tool_header {
+    cursor: pointer;
+    background-color: #61037e;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3% 0 3% 5%;
+    width: 18vw;
+}

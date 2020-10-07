@@ -1,0 +1,101 @@
+
+
+.btns{   
+    button{
+      color:#4e2478;
+      border:none;
+      padding:2% 0 0 0;
+    }
+    .col-2:hover,.col-2:active{
+      //background-color: #4e2478;
+      //color:white;
+      border:#4e2478 1px solid;
+
+    
+    }
+
+   img{margin-bottom: 5%;}
+    align-self:flex-end;
+ }
+
+ .nav-item{
+   text-align: left;
+ }
+
+.DivLogo{
+   text-align: center;
+   #logo{
+      width:30%;
+   }
+}
+
+.ExpTitle{
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+   color: white;
+   background-image: url('../../assets/title_bg.png');
+   padding: 5%;
+   border-radius: 10px;
+   font-size: 1.3vw;
+   margin: 0 3%;
+}
+
+nav{
+   padding:0 3%;
+}
+
+.col-3,.col-5,.div3,.div1{
+   align-self: flex-end;  
+}
+
+.col-2{
+   text-align: center;
+   padding:0;
+   align-self:flex-end;
+}
+
+.div1{
+   width: 50%;
+   text-align: right;
+   align-self: flex-end;
+div{
+   display: inline;
+}   
+}
+.div3{
+  // margin-right: 15%;
+  text-align: left;
+   width:50%;
+}
+
+.con{
+ display:inline-flex;
+  flex-wrap:wrap;
+  width: 100%;
+  direction: rtl;
+  padding: 1% 5% 0 5%;
+}
+
+.flex-direction{
+   flex-direction:row;
+ }
+
+
+ 
+@media screen and (max-width: 800px) {
+   .flex-direction{
+   flex-direction:column;
+   }
+ .div1{
+   width:100%;
+   .ExpTitle{
+      font-size: 1.2rem;
+   }
+   }
+   .div3{
+     width:100%;
+   }
+   
+ }

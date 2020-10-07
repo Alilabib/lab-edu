@@ -1,0 +1,101 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+
+    <navbar-experiment [exp_name]="title"></navbar-experiment>
+
+    <div #container class="container expermints-container" (click)="Close()">
+
+        <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight workSpace">
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+
+                            <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+
+                                <div class="toast-body">
+                                    قم بسحب الأدوات إلى هنا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+
+            <div class="p-2 flex-shrink-1 bd-highlight  tools-section">
+
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+
+                <div class="tools">
+                    <div class="row justify-content-center">
+                        <div class="col-3" #item id="water">
+                            <img data-toggle="tooltip" data-placement="left" title="اناء به ماء" src="../../../assets/exp17/water.png">
+                        </div>
+                        <div class="col-3" #item id="pepper">
+                            <img data-toggle="tooltip" data-placement="left" title="فلفل أسود" src="../../../assets/exp17/pepper.png">
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3" #item id="milk">
+                            <img data-toggle="tooltip" data-placement="left" title="اناء به حليب" src="../../../assets/exp17/milk.png">
+                        </div>
+                        <div class="col-3" #item id="red">
+                            <img data-toggle="tooltip" data-placement="left" title="مادة حمراء" src="../../../assets/exp17/redmaterial4.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div id="paper" class="col-3" #item id="tester">
+                            <img data-toggle="tooltip" data-placement="left" title=" عود اذان" src="../../../assets/exp17/tester1.png">
+                        </div>
+                        <div id="paper" class="col-3" #item id="tester">
+                            <img data-toggle="tooltip" data-placement="left" title=" عود اذان" src="../../../assets/exp17/tester1.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div id="paper" class="col-3" #item id="soap">
+                            <img data-toggle="tooltip" data-placement="left" title=" صابون " src="../../../assets/exp17/soap.png">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        <i class="fas fa-times"></i>
+      </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

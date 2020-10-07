@@ -1,0 +1,28 @@
+@import "../../../assets/scss/sharedExpDesign.scss";
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .col-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      position: absolute;
+    }
+  }
+}
+.secondRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  .col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      position: absolute;
+    }
+  }
+}

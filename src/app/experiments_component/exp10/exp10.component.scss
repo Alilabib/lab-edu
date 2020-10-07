@@ -1,0 +1,180 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+.lab {
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: stretch;
+    // height: 71vh;
+    .labs {
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        .waterPlace {
+            width: 30%;
+            #tap {
+                width: 100%;
+            }
+        }
+    }
+    .tools {
+            height: 55vh;
+        // overflow-y: scroll;
+        .tool {
+            display: flex;
+            justify-content: space-around;
+            // align-items: center;
+        }
+    }
+}
+
+#bottle-300,
+#bottle-150 {
+    padding: 0px;
+    #bottle {
+        width: 90%;
+    }
+}
+
+#spoonhit {
+    opacity: 0;
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    height: 25%;
+    margin: 0;
+}
+
+#spoonhit1 {
+    opacity: 0;
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    height: 25%;
+    margin: 0;
+}
+
+#timer1,
+#timer2 {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+}
+#sugar1,
+#sugar2 {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes scaling {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.Spoon {
+    img {
+        width: 50%;
+    }
+}
+
+.Suger {
+    img {
+        width: 40%;
+    }
+}
+
+.timer {
+    img {
+        width: 100%;
+    }
+}
+
+.exp_footer {
+    align-self: flex-end;
+}
+
+@-webkit-keyframes fillAction {
+    0% {
+        -webkit-transform: translate(0, 150px);
+    }
+    100% {
+        -webkit-transform: translate(0, 10px);
+    }
+}
+
+@-webkit-keyframes fillAction1 {
+    0% {
+        -webkit-transform: translate(0, 100px);
+    }
+    100% {
+        -webkit-transform: translate(0, 10px);
+    }
+}
+
+@-webkit-keyframes waveAction {
+    0% {
+        -webkit-transform: translate(-150px, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes rotateIceCream {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.water_falling {
+    width: 6.5%;
+    position: relative;
+    top: 0%;
+    left: -36%;
+    z-index: 2;
+    opacity: 0;
+}
+
+#backVideo {
+    cursor: pointer;
+}
+
+#sugar15 {
+    opacity: 0;
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    right: 35%;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

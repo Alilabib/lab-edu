@@ -1,0 +1,91 @@
+@import "../../../assets/scss/sharedExpDesign.scss";
+
+#hitArea {
+  bottom: 60%;
+  position: relative;
+  left: 80%;
+}
+#hitArea1 {
+  bottom: 80%;
+  position: relative;
+  left: 80%;
+}
+
+#hitTest {
+  bottom: 20%;
+  position: relative;
+  left: 30%;
+}
+
+#balance {
+  .weight {
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+  .weight1 {
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+  .weight2 {
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+  // img{
+  //     // width: 250%;
+  // }
+}
+
+#fixedHeater {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35%;
+  #heaterHit {
+    position: absolute;
+    bottom: 26%;
+  }
+  img {
+    width: 50%;
+  }
+}
+#fixedBalance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35%;
+  #balanceHit {
+    position: absolute;
+    bottom: 8%;
+    // right: 40%;
+  }
+  .weight {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+  .weight1 {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+  .weight2 {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    bottom: 3%;
+  }
+}

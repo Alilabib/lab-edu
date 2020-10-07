@@ -1,0 +1,11 @@
+
+<svg height="110" width="110">
+  <defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+  
+  <rect width="5" height="90"  stroke-width="3" fill="blue" filter="url(#f1)" />
+  Sorry, your browser does not support inline SVG.  
+</svg>

@@ -1,0 +1,86 @@
+nav .navbar-collapse {
+  justify-content: flex-end;
+  flex-grow: 0.5;
+}
+
+nav .d-flex {
+  flex-grow: 0.6;
+  justify-content: flex-end;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .col-7 img {
+  position: relative;
+  width: 110%;
+  z-index: 0;
+  top: 0;
+}
+
+.header .col-7 .topic {
+  color: white;
+  font-size: 2.5vw;
+  position: absolute;
+  top: 4vw;
+  left: 30vw;
+}
+
+.header .col-7 .btn {
+  position: absolute;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  background-color: #a82fb8cc;
+  top: 3vw;
+  left: 4vw;
+  padding: 1% 2%;
+  font-size: 1.1vw;
+}
+
+.header .col-7 .btn img {
+  width: 2vw;
+  position: absolute;
+  left: -1vw;
+}
+
+.header .col:nth-child(2) {
+  text-align: right;
+  padding: 1% 2% 0 0;
+}
+
+.header .col:nth-child(2) .logo {
+  width: 40%;
+}
+
+.content {
+  direction: rtl;
+}
+
+.content .col-2 {
+  margin: 2% 1%;
+  padding: 0;
+}
+
+.exp {
+  text-align: center;
+}
+
+.exp img {
+  width: 40%;
+}
+
+.exp:hover img {
+  width: 35%;
+}
+
+.exp_title1 {
+  font-size: 1.1vw;
+  color: #a93b99;
+}
+
+.exp_title2 {
+  font-size: 1.1vw;
+  color: #762687;
+}

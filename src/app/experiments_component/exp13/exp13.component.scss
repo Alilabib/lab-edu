@@ -1,0 +1,47 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+.col-4 {
+    align-self: center;
+    padding: 1%;
+    margin: 3%;
+    img {
+        width: 100%;
+    }
+}
+
+.col-3 {
+    align-self: center;
+    padding: 1%;
+    margin: 3%;
+    img {
+        width: 100%;
+    }
+}
+
+.water {
+    width: 13% !important;
+    position: absolute;
+    top: 83px;
+    right: 10px;
+    opacity: 0;
+}
+
+.glass {
+    opacity: 0.5;
+}
+
+.tuhlub {
+    position: absolute;
+    right: 10px;
+    width: 50%!important;
+    bottom: 5px;
+    opacity: 0;
+}
+
+#backVideo {
+    cursor: pointer;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

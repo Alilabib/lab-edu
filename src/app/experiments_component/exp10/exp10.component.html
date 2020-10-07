@@ -1,0 +1,111 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+    <navbar-experiment [exp_name]="title" [exp_Id]="exp_Id"></navbar-experiment>
+    <div #container class="container expermints-container" (click)="Close()">
+
+        <div class="lab d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight workSpace" id="workSpace">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="labs col-12">
+                                <div class="waterPlace">
+                                    <img #bool id="tap" src="assets/exp10/tap.png">
+                                    <img #water id="water" class="water_falling" src="assets/exp10/watersvg.png">
+                                </div>
+
+                                <!-- <div class="experiment-1">
+                                    <div class="experiment-1__timer" id="timer1">
+                                        <span id="countdown">0</span> second
+                                        <img data-toggle="tooltip" data-placement="right" title="تايمر" id="timer" src="assets/exp10/timer.png">
+                                    </div>
+                                </div> -->
+                                <!-- <div class="experiment-2">
+                                    <div class="experiment-2__timer" id="timer2">
+                                        <span id="countdown1">0</span> second
+                                        <img data-toggle="tooltip" data-placement="right" title="تايمر" id="timer" src="assets/exp10/timer.png">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+
+            <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+                <!--tools-->
+                <div class="tools">
+                    <div class="tool" id="bott">
+                        <div class="row justify-content-center">
+                            <div #item id="bottle-150" class="col-6">
+                                <img data-toggle="tooltip" data-placement="top" id="bottle" title="كأس" src="assets/exp10/bottle-150.png">
+                                <img id="sugar15" src="assets/exp10/sugar-150.png">
+                                <p id="spoonhit"></p>
+                                <p id="timer1">
+                                    <span id="countdown">0 </span> second
+                                </p>
+                            </div>
+                            <div #item id="bottle-300" class="col-6">
+                                <img data-toggle="tooltip" data-placement="top" id="bottle" title="كأس" src="assets/exp10/bottle-300.png">
+                                <img id="sugar15" src="assets/exp10/sugar-150.png">
+                                <p id="spoonhit1"></p>
+                                <p id="timer2">
+                                    <span id="countdown1">0 </span> second
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool Suger">
+                        <div class="row justify-content-center">
+                            <div #item class="col-6" id="sugar1">
+                                <img data-toggle="tooltip" data-placement="top" title="سكر" id="sugar1" src="assets/exp10/sugar-150.png">
+                            </div>
+                            <div #item class="col-6" id="sugar2">
+                                <img data-toggle="tooltip" data-placement="top" title="سكر" id="sugar2" src="assets/exp10/sugar-300.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool Spoon">
+                        <div class="row justify-content-center">
+                            <div #item class="col-6" id="tube1">
+                                <img data-toggle="tooltip" data-placement="top" title="ملعقة" id="tube1" src="assets/exp10/spoon-150.png">
+                            </div>
+                            <div #item class="col-6" id="tube2">
+                                <img data-toggle="tooltip" data-placement="top" title="ملعقة" id="tube2" src="assets/exp10/spoon-300.png">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tool timer">
+                        <div class="row justify-content-center">
+                            <div #item id="timer" class="col-8">
+                                <img data-toggle="tooltip" data-placement="top" title="ساعه ايقاف" id="timer" src="assets/exp10/timer.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">
+                  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

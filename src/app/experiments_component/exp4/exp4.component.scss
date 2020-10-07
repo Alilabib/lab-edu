@@ -1,0 +1,24 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+
+.col-4{
+    align-self:center;
+    padding: 1%;
+    margin:5%;
+    img{width:100%;}
+}
+
+.col-3{
+	align-self:center;
+	text-align: center;
+    padding: 1%;
+    margin:5%;
+    img{width:35%;}
+}
+
+.crash{
+    opacity: 0;
+}
+
+.tools{
+    height: 55vh;
+}

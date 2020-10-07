@@ -1,0 +1,50 @@
+<div class="height-100vh back-image">
+    <div class="container">
+        <div class="row content">
+            <div class="col-12">
+                <div class="topic-title">
+                    <h3>
+                        التجارب الكيميائية
+                    </h3>
+                </div>
+                <!-- <div class="btn" data-toggle="modal" (click)="open()" id="Help" (mouseover)='helpVideo("Deaf_Science_Help.mp4")'> -->
+                <div class="btn help-btn" (click)="open()" id="help" #help>
+                    <!--data-toggle="modal" data-target="#exampleModalCenter"-->
+                    <i class="far fa-question-circle" aria-hidden="true"></i> المساعده
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row  display-flex-new">
+                    <div #exp data-toggle="tooltip" *ngFor="let e of experiments;let i=index;" [class]="'col-lg-3 col-md-12 col-sm-12 exp exper'+i" (click)="Go('/experiment/'+e.id)" [id]="e.id">
+                        <div class="card-expriment">
+                            <a class="thumbnail">
+                                <img src="../../assets/images/vector/4.svg" />
+                                <!-- <img [src]="e.img" alt="..."> -->
+                            </a>
+                            <div [ngClass]="(i%2 == 0)?'exp_title1':'exp_title2'">
+                                <span>
+                                    {{e.name}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../assets/images/vector/icon.png" class="fixed-right" />
+    </div>
+</div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <video #videoPlayer src="assets/videos/Into/Deaf_Science_HowToUse.mp4" controls="controls" width="100%" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        </video>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">إغلاق</button>
+            </div>
+        </div>
+    </div>
+</div> -->

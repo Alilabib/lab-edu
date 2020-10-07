@@ -1,0 +1,53 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+
+
+/* exp15 */
+.col-3{
+    align-self:center;
+    padding: 1%;
+    margin:2%;
+    img{width:80%;}
+}
+
+.col-4{
+    align-self:center;
+    padding: 1%;
+    margin:2%;
+    img{width:100%;}
+}
+
+
+.board{
+    transform: skewY(30deg);
+}
+
+
+
+
+
+    //transform: rotate3d(1, 1, 2, 110deg);
+
+
+
+
+.hole{
+    position: absolute;
+    top: 55px;
+    left: 35px;
+}
+
+.semi_board{
+    position: relative;
+    top: 32px;
+    left: 15px;
+    width: 30%;
+    transform: rotate3d(1, 1, 2, 110deg);
+}
+
+canvas{
+    position: absolute;
+    top: 13px;
+    left: -385px;
+     border: none;
+    z-index: -2;
+}

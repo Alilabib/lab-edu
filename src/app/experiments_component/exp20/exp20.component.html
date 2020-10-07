@@ -1,0 +1,88 @@
+
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static"
+  aria-labelledby="Exp_End" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 style="text-align: right;">أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h5>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+
+  <navbar-experiment [exp_name]="title" [exp_Id]="id"></navbar-experiment>
+
+  <div #container class="container expermints-container" (click)="Close()">
+
+      <div class="d-flex bd-highlight">
+          <div class="p-2 w-100 bd-highlight workSpace">
+              <div class="row" #workspace>
+                  <div class="col-12">
+                      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+                          <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+                              <div class="toast-body" id="drag">
+                                  قم بسحب الأدوات إلى هنا
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+              <a type="button" (click)="BackToSteps()" class="back">
+                  عودة إلى شرح التجربة
+              </a>
+          </div>
+          <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+              <div class="tool_header">
+                  <div class="col"> أدوات التجربة </div>
+              </div>
+
+              <!--tools-->
+              <div class="tools">
+                <div class="row justify-content-center">
+                  <div class="col-5 first"  #item id="paper">
+                    <p id="paperHitArea" style="display: none;">x</p>
+                    <img data-toggle="tooltip" id="mypaper" data-placement="left" title="ورقة ترشيح دائريه" src="../../../assets/exp20/paper.png">
+                  </div>
+                  <div class="col-5 first" #item id="partPaper">
+                    <img data-toggle="tooltip" id="partpaperr" data-placement="left" title="جزء من ورقة ترشيح" src="../../../assets/exp20/partPaper.png">
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-5" #item id="glass">
+                    <img data-toggle="tooltip" data-placement="left" title="كأس به ماء" src="../../../assets/exp20/glass.png">
+                  </div>
+                  <div class="col-5" #item id="pen">
+                    <img data-toggle="tooltip" data-placement="left" title="قلم حبر" src="../../../assets/exp20/pen.png">
+                    <p id="penHitArea" style="display: none;">x</p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="../../../assets/images/vector/1.gif" />
+              <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" >
+                <i class="fas fa-times"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>

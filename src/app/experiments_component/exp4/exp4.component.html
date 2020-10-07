@@ -1,0 +1,78 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+    <navbar-experiment [exp_name]="title" [exp_Id]="id"></navbar-experiment>
+    <div #container class="container expermints-container" (click)="Close()">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight workSpace">
+                <div class="row" #workspace>
+                    <div class="col-12">
+                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+                            <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+                                <div class="toast-body" id="drag">
+                                    قم بسحب الأدوات إلى هنا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+            <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+                <!--tools-->
+                <!--tools-->
+                <div class="tools">
+                    <div class="row justify-content-center">
+                        <div class="col-3" id="al" #item>
+                            <img #Altube data-toggle="tooltip" data-placement="top" title="ساق ألمنيوم" src="assets/exp4/AlTube.png">
+                        </div>
+                        <div class="col-3" id="wood" #item>
+                            <img #Woodtube data-toggle="tooltip" data-placement="top" title="ساق خشب" src="assets/exp4/woodTube.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3" id="iron" #item>
+                            <img #irontube data-toggle="tooltip" data-placement="top" title="ساق حديد" src="assets/exp4/ironTube.png">
+
+                        </div>
+                        <div class="col-3" #item id="plastic">
+
+                            <img data-toggle="tooltip" data-placement="top" title="ساق بلاستيك" src="assets/exp4/plasticTube.png">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-4" #item id="water">
+                            <div #crash class="crash"> here</div>
+                            <img #water data-toggle="tooltip" data-placement="top" title="كأس به ماء" src="assets/exp4/water.png">
+                        </div>
+
+                        <div class="col-4" #item id="fire">
+
+                            <img #fire1 data-toggle="tooltip" data-placement="top" title="لهب" src="assets/exp4/heater.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">
+                  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

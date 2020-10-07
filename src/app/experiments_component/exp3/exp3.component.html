@@ -1,0 +1,225 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+    <navbar-experiment [exp_name]="title" [exp_Id]="id"></navbar-experiment>
+    <div #container class="container expermints-container" (click)="Close()">
+        <div class="d-flex bd-highlight work">
+            <div class="p-2 w-100 bd-highlight workSpace">
+                <div class="row" #workspace>
+                    <div class="col-12" style="align-self: center;">
+                        <!--toast-->
+                        <!-- Tap img-->
+                        <img #bool id="tap" src="assets/exp3/tap.png">
+                        <!-- <img #bool id="tap" src="assets/exp3/tap.png" (click)="FillWater()"> -->
+                        <img #water id="water" class="water_falling" src="assets/exp3/watersvg.png">
+                    </div>
+                    <div class="col-12">
+                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+
+                            <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+
+                                <div class="toast-body" id="drag">
+                                    قم بسحب الأدوات إلى هنا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+            <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+                <!--tools-->
+                <div class="tools">
+                    <div class="row justify-content-center">
+                        <div class="col-3 glass" #item *ngFor="let f of [0,1,2]" [id]="f">
+                            <!-- oil / salt-->
+                            <svg #oils class="oils" height="20" width="20">
+								<circle cx="10" cy="10" r="5" stroke="black" stroke-width="1" fill="yellow" />
+							</svg>
+                            <img #salts class="salts" src="assets/exp3/salt.png" class="salt">
+                            <img #sugercube class="salts" src="assets/exp3/sugar.png" class="salt">
+                            <span #touchSpoon style="opacity: 0;">he</span>
+                            <svg #water1 data-toggle="tooltip" data-placement="top" title="كأس" version="1.1" class="glassOfWater" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 62.8 96.9" style="enable-background:new 0 0 62.8 96.9;"
+                                xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#D4D5D2;}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:#F4F4F4;}
+	.st4{fill:#C6CDCF;}
+	.st5{fill:url(#SVGID_3_);}
+	.st6{opacity:0.53;fill:url(#SVGID_4_);}
+	.st7{opacity:0.53;fill:url(#SVGID_5_);}
+	.st8{opacity:0.61;}
+	.st9{fill:url(#SVGID_6_);}
+</style>
+<g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.4263" y1="51.4193" x2="60.2719" y2="51.4193">
+				<stop  offset="0" style="stop-color:#939298"/>
+				<stop  offset="1.793048e-02" style="stop-color:#B5B4B6"/>
+				<stop  offset="3.820126e-02" style="stop-color:#D6D6D6"/>
+				<stop  offset="5.565052e-02" style="stop-color:#ECECEC"/>
+				<stop  offset="6.813810e-02" style="stop-color:#F4F4F4"/>
+				<stop  offset="0.8963" style="stop-color:#F4F4F4"/>
+				<stop  offset="0.9292" style="stop-color:#F1F1F1"/>
+				<stop  offset="0.9492" style="stop-color:#E6E6E6"/>
+				<stop  offset="0.9659" style="stop-color:#D5D5D5"/>
+				<stop  offset="0.9806" style="stop-color:#BEBDBE"/>
+				<stop  offset="0.994" style="stop-color:#A2A1A5"/>
+				<stop  offset="1" style="stop-color:#939298"/>
+			</linearGradient>
+			<path class="st0" d="M2.1,6.1v83.6c0,3.9,13,7.1,29,7.1c16,0,29-3.2,29-7.1V6.1H2.1z"/>
+			<g>
+				<path class="st1" d="M1.9,6c0,13,0,26,0,39.1c0,9.4,0,18.8,0,28.3c0,5.3-0.2,10.6,0,15.8C2,91,3.2,92,4.8,92.8
+					c5.3,2.7,11.8,3.3,17.6,3.8c8.5,0.7,17.2,0.5,25.5-1c2.8-0.5,5.7-1.1,8.4-2.3c1.3-0.6,3.1-1.4,3.7-2.8c0.4-1,0.2-2.4,0.2-3.4
+					c0-2.7,0-5.5,0-8.2c0-8.8,0-17.7,0-26.5c0-9.5,0-18.9,0-28.4c0-5.7,0.3-11.4,0-17.1c0-0.3,0-0.6,0-0.9c0-0.1-0.3-0.2-0.4-0.2
+					c-16.9,0-33.8,0-50.7,0C6.8,5.9,4.4,5.9,1.9,6c-0.2,0,0.3,0.2,0.4,0.2c18.2,0,36.5,0,54.7,0c0.9,0,2.2-0.2,3,0
+					c0.5,0.1-0.2-0.4-0.2-0.1c0,0.1,0,0.4,0,0.6c-0.2,0.9,0,2.1,0,3.1c0,1.7,0,3.4,0,5.1c0,10.9,0,21.8,0,32.8c0,11,0,22,0,32.9
+					c0,2.8,0.1,5.6,0,8.4c-0.1,3.9-5.4,5-8.4,5.7c-10.6,2.6-22.2,2.7-32.9,1.4c-4.5-0.5-9.7-1.2-13.8-3.5c-1.3-0.7-2.3-1.6-2.4-3.1
+					c-0.5-7.1,0-14.4,0-21.5c0-20.2,0-40.4,0-60.6c0-0.4,0-0.8,0-1.2C2.4,6,1.9,5.9,1.9,6z"/>
+			</g>
+		</g>
+		<g #fill_glass id="fill_glass">
+			<linearGradient   id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="2.4187" y1="64.4153" x2="59.8084" y2="64.4153">
+				<stop  offset="0.5057" style="stop-color:#1BA4C9"/>
+				<stop  offset="0.5922" style="stop-color:#1BA2C7"/>
+				<stop  offset="0.6606" style="stop-color:#1C9AC0"/>
+				<stop  offset="0.7229" style="stop-color:#1D8DB5"/>
+				<stop  offset="0.7816" style="stop-color:#1F7BA6"/>
+				<stop  offset="0.8377" style="stop-color:#216694"/>
+				<stop  offset="0.8911" style="stop-color:#224D7F"/>
+				<stop  offset="0.9428" style="stop-color:#243167"/>
+				<stop  offset="0.9436" style="stop-color:#243067"/>
+				<stop  offset="0.9515" style="stop-color:#222F63"/>
+				<stop  offset="0.9623" style="stop-color:#1E2B58"/>
+				<stop  offset="0.9747" style="stop-color:#182447"/>
+				<stop  offset="0.9881" style="stop-color:#101B33"/>
+        <stop  offset="1" style="stop-color:#0B1220"/>
+      
+			</linearGradient>
+			<path  class="st2" d="M59.5,32.7c0,2.1-12.7,3.8-28.4,3.8c-15.7,0-28.4-1.7-28.4-3.8H2.4v56.4c0,3.9,12.8,7,28.7,7
+				c15.8,0,28.7-3.1,28.7-7V32.7H59.5z"/>
+		</g>
+		<g>
+			<path class="st3" d="M62.7,5.4c0,3-14,5.4-31.3,5.4c-17.3,0-31.3-2.4-31.3-5.4c0-3,14-5.4,31.3-5.4C48.7,0.1,62.7,2.5,62.7,5.4z"
+				/>
+			<g>
+				<path class="st4" d="M62.6,5.4c0,1.2-1.8,1.8-2.7,2.2c-2.3,0.9-4.7,1.3-7.1,1.7c-7.5,1.2-15.2,1.5-22.9,1.4
+					c-7.3-0.1-14.7-0.4-21.9-1.8C6.9,8.7-1.2,7.3,0.5,4.8c0.8-1.2,2.8-1.7,4.1-2C7.2,2,10,1.5,12.7,1.2c7.9-1,15.9-1.2,23.8-1
+					c6.1,0.2,12.3,0.6,18.3,1.8c1.9,0.4,3.8,0.8,5.6,1.6C61.2,3.8,62.5,4.4,62.6,5.4c0,0.1,0.3,0.1,0.3,0c0-1.1-1.4-1.7-2.2-2
+					c-2-0.9-4.2-1.3-6.3-1.7c-7-1.3-14.3-1.6-21.4-1.7c-7.5-0.1-15.1,0.2-22.6,1.4C8,1.8,5.5,2.2,3.2,3c-1,0.4-2.6,0.9-3.1,2
+					c-0.4,0.9,0.7,1.7,1.3,2C3.1,8,5.1,8.4,6.9,8.8c6.7,1.4,13.6,1.8,20.4,2c7.8,0.2,15.6-0.1,23.3-1.1c2.6-0.3,5.3-0.8,7.8-1.5
+					c1.3-0.4,3-0.9,4-1.9c0.2-0.2,0.4-0.5,0.4-0.8C62.8,5.3,62.6,5.3,62.6,5.4z"/>
+			</g>
+		</g>
+		<g>
+			<path class="st3" d="M59.6,4.9c0,1.9-12.6,3.4-28.2,3.4C15.9,8.4,3.2,6.8,3.2,4.9c0-1.9,12.6-3.4,28.2-3.4
+				C47,1.5,59.6,3.1,59.6,4.9z"/>
+			<g>
+				<path class="st4" d="M59.4,4.9c0,0.4-0.5,0.7-0.9,0.8c-0.7,0.3-1.5,0.5-2.3,0.7c-2.6,0.6-5.3,0.9-7.9,1.1c-8,0.7-16,0.8-24,0.6
+					c-3.7-0.1-7.3-0.3-11-0.7c-2.5-0.3-5-0.6-7.4-1.2C5.4,6.2,3,5.7,3.4,4.7c0.2-0.4,0.8-0.6,1.2-0.8c0.8-0.3,1.7-0.5,2.6-0.7
+					c2.8-0.6,5.6-0.9,8.4-1.1c3.9-0.3,7.8-0.5,11.6-0.6c7.8-0.1,15.6,0,23.3,0.9c2.1,0.2,4.3,0.5,6.4,1.1
+					C57.5,3.7,59.4,4.1,59.4,4.9c0,0.1,0.3,0.1,0.3,0c0-0.9-1.8-1.3-2.4-1.4c-2.3-0.6-4.6-0.9-7-1.2c-7.6-0.8-15.3-1-23-0.9
+					C20.7,1.6,14.1,1.8,7.6,3.1C6.3,3.3,4.5,3.5,3.4,4.4C2.7,5,3.5,5.6,4.1,5.9c1.7,0.8,3.6,1,5.4,1.3c3.1,0.5,6.3,0.7,9.4,0.9
+					c8,0.5,16,0.5,24,0c4.1-0.2,8.2-0.5,12.2-1.3c1.1-0.2,2.3-0.5,3.4-0.9c0.4-0.2,1.1-0.5,1.1-1C59.7,4.9,59.4,4.9,59.4,4.9z"/>
+			</g>
+		</g>
+		
+			<radialGradient id="SVGID_3_" cx="1522.4921" cy="19123.3242" r="70.179" fx="1522.3518" fy="19106.3887" gradientTransform="matrix(0.5447 0 0 8.040000e-02 -798.2557 -1505.1038)" gradientUnits="userSpaceOnUse">
+      <!--
+        <stop  offset="0.1768" style="stop-color:#DBE7E9"/>
+			<stop  offset="0.3406" style="stop-color:#B6DCE5"/>
+			<stop  offset="0.6402" style="stop-color:#76C7DD"/>
+			<stop  offset="0.6586" style="stop-color:#91D1E2"/>
+			<stop  offset="0.6818" style="stop-color:#ABDAE7"/>
+			<stop  offset="0.7084" style="stop-color:#C1E2EB"/>
+			<stop  offset="0.7395" style="stop-color:#D2E8ED"/>
+			<stop  offset="0.7779" style="stop-color:#DDECEF"/>
+			<stop  offset="0.8319" style="stop-color:#E4EFF0"/>
+			<stop  offset="0.9817" style="stop-color:#E6EFF1"/>
+      -->
+    </radialGradient>
+		<path class="st5" d="M59.7,32.7c0,2.1-12.8,3.9-28.7,3.9c-15.9,0-28.7-1.7-28.7-3.9c0-2.2,12.8-3.9,28.7-3.9
+			C46.9,28.8,59.7,30.5,59.7,32.7z"/>
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="30.0176" y1="9.5721" x2="66.8693" y2="5.6929">
+			<!--<stop  offset="0.1341" style="stop-color:#E4EEEF"/>
+			<stop  offset="0.5915" style="stop-color:#6588A6"/>
+			<stop  offset="0.9146" style="stop-color:#E4EEEF"/>
+      -->
+    </linearGradient>
+		<path class="st6" d="M60.9,5c0,0-1.4,3.4-22.7,3.9C16.8,9.4,27,9.6,41.9,9.3C57.8,9,64.2,5.3,60.9,5z"/>
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="2.4594" y1="4.6033" x2="18.405" y2="9.6582">
+		<!--	<stop  offset="5.064300e-02" style="stop-color:#E4EEEF"/>
+			<stop  offset="0.5915" style="stop-color:#6588A6"/>
+			<stop  offset="1" style="stop-color:#E4EEEF"/>
+    -->
+    </linearGradient>
+		<path class="st7" d="M20.4,8.8c0,0-17.8-0.9-17.8-4c0,0,0.1-0.8-0.7-0.1C1.1,5.4,1,6.6,7,8C13,9.3,28.5,9.2,20.4,8.8z"/>
+		<g class="st8">
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="3.4158" y1="2.3636" x2="59.4041" y2="2.3636">
+				<stop  offset="6.097560e-02" style="stop-color:#F4F4F4"/>
+				<stop  offset="0.4451" style="stop-color:#737E78"/>
+				<stop  offset="1" style="stop-color:#F4F4F4"/>
+			</linearGradient>
+			<path class="st9" d="M31.4,1c14.5,0,26.4,1.4,28,3.3c-1.6-2.1-13.5-3.8-28-3.8C16.9,0.5,5,2.1,3.4,4.3C5,2.4,16.9,1,31.4,1z"/>
+		</g>
+	</g>
+</g>
+      </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-4" id="spoon" #item>
+                            <img class="spoon" data-toggle="tooltip" data-placement="top" title="ملعقة" src="assets/exp3/spoon.png">
+                        </div>
+
+                        <div class="col-4" #item id="sugar">
+                            <img #sugar class="sugar" data-toggle="tooltip" data-placement="top" title="سكر" src="assets/exp3/sugar.png">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+
+                        <div class="col-4" #item id="salt">
+                            <img class="spoon" data-toggle="tooltip" data-placement="top" title="ملح" src="assets/exp3/saltspoon.png">
+                        </div>
+
+
+                        <div class="col-4" #item id="oil">
+
+                            <img src="assets/exp3/oil.png" data-toggle="tooltip" data-placement="top" title="زيت">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">
+                  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

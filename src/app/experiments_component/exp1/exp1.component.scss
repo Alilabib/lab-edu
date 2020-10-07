@@ -1,0 +1,39 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+
+// exp 1 //
+.bomb{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    opacity: 0;
+}
+
+.crash{
+    position: absolute;
+   // width: 50%;
+    top: 0px;
+    left: 20px;
+    z-index: 2000;
+    opacity: 0;
+    font-size: 1vw;
+}
+
+.flzInKer,.iron1{
+    position: absolute;
+    width: 50% !important;
+    z-index: 2;
+    left: 15px;
+    opacity: 0;
+}
+
+
+.col-3{
+    align-self:center;
+    padding: 1%;
+    margin:10%;
+    img{width:60%;}
+}
+
+#kerosen{opacity: 0.8; img{width: 105%;}}
+#waterglass{opacity: 0.8; width :105%;}

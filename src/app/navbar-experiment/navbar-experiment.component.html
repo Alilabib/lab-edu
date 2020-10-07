@@ -1,0 +1,39 @@
+<div class="experiment-header">
+    <div class="main-links">
+        <ul>
+            <li>
+                <button (click)="GoHome()">
+                    <i class="fas fa-house-damage"></i>
+                       الرئيسية
+               </button>
+            </li>
+            <li>
+                <button (click)="goBack()">
+                    <i class="fas fa-tools"></i>
+                    الأدوات
+                </button>
+            </li>
+            <li>
+                <button (click)="GetSteps()" data-toggle="modal">
+                    <i class="fas fa-sort-numeric-up-alt"></i>
+                       الخطوات
+                </button>
+            </li>
+            <li>
+                <button data-toggle="modal" data-target="#conclusion" (click)="GetConclusion()">
+                    <i class="far fa-hand-peace"></i>
+                    الإستنتاج
+                </button>
+            </li>
+            <li>
+                <button data-toggle="modal" data-target="#HowUseLab" (click)="HowUseLab()">
+                    <i class="fas fa-question"></i>
+                    المساعده
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        <h3 class="ExpTitle">{{exp_name}} </h3>
+    </div>
+</div>

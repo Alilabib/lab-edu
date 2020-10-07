@@ -1,0 +1,158 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+
+  <navbar-experiment [exp_name]="title" [exp_Id]="id"></navbar-experiment>
+
+  <div #container class="container expermints-container" (click)="Close()">
+
+      <div class="d-flex bd-highlight">
+          <div class="p-2 w-100 bd-highlight workSpace">
+              <div class="row">
+
+                  <div class="col-12">
+                      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+
+                          <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+
+                              <div class="toast-body">
+
+                                  قم بسحب الأدوات إلى هنا
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+              <a type="button" (click)="BackToSteps()" class="back">
+          عودة إلى شرح التجربة
+      </a>
+          </div>
+
+          <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+              <div class="tool_header">
+                  <div class="col"> أدوات التجربة </div>
+              </div>
+              <!--tools-->
+              <div class="tools">
+                  <div class="row justify-content-center myRow">
+                      <div class="col-3" #item id="balance">
+                        <span class="weight"> {{weight}} </span>
+                        <span class="weight1"> {{weight1}} </span>
+                        <span class="weight2"> {{weight2}} </span>
+                        <div id="hitArea" #item>x</div>
+                        <img data-toggle="tooltip" data-placement="left" title="ميزان حساس" src="../../../assets/exp16/balance.png">
+                      </div>
+                      <div class="col-3" #item id="tester">
+                          <img data-toggle="tooltip" style="width: 60%;" data-placement="left" title="مخبار مدرج" src="../../../assets/exp28/tester.png">
+                          <div id="hitTest" #item>x</div>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-3" #item id="peas">
+                      <img data-toggle="tooltip" style="width: 200%;" data-placement="left" title="بازلاء" src="../../../assets/exp28/peas.png">
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../../assets/images/vector/1.gif" />
+            <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+            <table  class="table table-bordered table-sm  table-active" style="direction: rtl; text-align: right;">
+              <thead>
+                <tr>
+                  <th>
+                    جدول البيانات
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                   <td>
+                     كتلة المخبار المدرج فارغ
+                   </td>
+                   <td>
+                     106.5 جرام
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     كتلة 25 فلقة بازلاء والمخبار المدرج معا
+                   </td>
+                   <td>
+                     114.4 جرام
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     كتلة 25 فلقة بازلاء
+                   </td>
+                   <td>
+                     114.4 - 106.5 = 7.9 جرام
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                    كتلة فلقة بازلاء واحده
+                  </td>
+                   <td>
+                     7.9 / 25 = 0.316 جرام
+                   </td>
+                 </tr>
+                 <tr>
+                  <td>
+                    كتلة 100 فلقة بازلاء والمخبار المدرج معا
+                  </td>
+                  <td>
+                    160 جرام
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    كتلة 100 فلقة بازلاء
+                  </td>
+                  <td>
+                    160 - 106.5 = 53.5 جرام
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    عدد فلقات البازلاء في 100 ملل
+                  </td>
+                  <td>
+                    53.5 / 0.316 = 169 حبة
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    كتلة 1 مول من فلقات البازلاء
+                  </td>
+                  <td>
+                     جرام6.02x 10<sup>23</sup>x0.316 = 1.902x10<sup>23</sup>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    حجم 1 مول من فلقات البازلاء
+                  </td>
+                  <td>
+                    0.591x6.02x10<sup>23</sup>=3.557x10<sup>23</sup>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" >
+              <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</div>

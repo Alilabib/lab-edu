@@ -1,0 +1,49 @@
+@import "../../../assets/scss/sharedExpDesign.scss";
+#balance{
+  .weight{
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+  .weight1{
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+  .weight2{
+    position: absolute;
+    // transform: rotate(29deg);
+    /* color: green; */
+    top: 30%;
+    left: 40%;
+    opacity: 0;
+  }
+    img{
+        width: 250%;
+    }
+}
+
+#hitArea {
+  margin: 0;
+  position: absolute;
+  left: 85%;
+  bottom: 65%;
+}
+#hitTest {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 42%;
+}
+
+.myRow {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: baseline;
+}

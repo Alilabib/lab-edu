@@ -1,0 +1,142 @@
+// @import '../../../assets/scss/sharedExpDesign.scss';
+// .col-4,
+// .col-5 {
+//     img {
+//         width: 100%;
+//     }
+//     padding: 3%;
+//     margin: 3%;
+// }
+
+// #candel {
+//     img {
+//         width: 40%;
+//     }
+// }
+
+// .duk {
+//     position: absolute;
+//     width: 80% !important;
+//     opacity: 0;
+// }
+
+// .cup {
+//     opacity: 0.9;
+// }
+
+// #w1 {
+//     width: 100px;
+//     height: 100px;
+// }
+
+// #boot150 {
+//     opacity: 0;
+// }
+
+// #wat {
+//     height: 100px;
+//     width: 100px;
+//     svg {
+//         height: 100%;
+//         width: 100%;
+//     }
+// }
+
+// #waterGear {
+//     width: 100px;
+// }
+
+// #backVideo {
+//     cursor: pointer;
+// }
+
+// #opened {
+//     width: 25%;
+//     position: absolute;
+//     left: 40%;
+//     bottom: 9%;
+//     opacity: 0;
+// }
+
+// .modal {
+//     overflow-x: hidden;
+//     overflow-y: hidden;
+// }
+
+
+
+
+@import '../../../assets/scss/sharedExpDesign.scss';
+.col-4,
+.col-5 {
+    img {
+        width: 100%;
+    }
+    padding: 3%;
+    margin: 3%;
+}
+
+#candel {
+    display: flex;
+    align-items: center;
+    img {
+        width: 40%;
+    }
+}
+
+#testerhit{
+    // width: 15%; */
+    position: relative;
+    left: 4%;
+    top: 5%;
+    opacity: 0;
+}
+
+.duk {
+    position: absolute;
+    width: 80% !important;
+    opacity: 0;
+}
+
+.cup {
+    opacity: 0.9;
+}
+
+#w1 {
+    width: 100px;
+    height: 100px;
+}
+
+#boot150 {
+    opacity: 0;
+}
+
+#wat {
+    height: 100px;
+    width: 100px;
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#waterGear {
+    width: 100px;
+}
+
+#backVideo {
+    cursor: pointer;
+}
+
+#opened {
+    width: 25%;
+    position: absolute;
+    left: 40%;
+    bottom: 9%;
+    opacity: 0;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

@@ -1,0 +1,64 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+
+#magnet,#sand,#ironBowder,#plate{
+    align-self: flex-end;
+    img{width:100%}
+    padding:2%;
+    margin:3%;
+}
+
+.col-5{
+    margin: 5%;
+}
+
+
+#water{opacity: 0.7; img{width: 5rem;}}
+.ironBottle,.sandBottle,.magneticBottle,.ironSandMagnetic{ 
+    display:none;
+    position: absolute;
+    
+    z-index: 2;
+    margin: 0;
+    opacity: 0;
+}
+
+.crash{
+    
+    position: absolute;
+    width: 80%;
+    top: 18px;
+    left: 10px;
+    z-index: 2000;
+    opacity: 0;
+}
+#Layer_1{
+    .st0{filter:url(#Adobe_OpacityMaskFilter);}
+    .st1{filter:url(#Adobe_OpacityMaskFilter_1_);}
+    .st2{mask:url(#SVGID_1_);fill:url(#SVGID_2_);}
+    .st3{fill:url(#SVGID_3_);}
+    .st4{fill:url(#SVGID_4_);}
+    .st5{fill:#D5D5D2;}
+    .st6{fill:#F4F5F5;}
+    .st7{fill:#C6CDD1;}
+    .st8{opacity:0.53;fill:url(#SVGID_5_);}
+    .st9{opacity:0.53;fill:url(#SVGID_6_);}
+    .st10{opacity:0.61;}
+    .st11{fill:url(#SVGID_7_);}
+}
+#Layer_2{
+    .st0{fill:#F9BB32;}
+    .st1{fill:#DB9C2E;}
+}
+#Capa_1{
+    .st0{fill:#ECEAEC;}
+    .st1{fill:#DAD8DB;}
+    .st2{fill:#FF8086;}
+    .st3{fill:#E5646E;}
+    .st4{fill:#A4CCFF;}
+    .st5{fill:#8BB3EA;}
+}
+#Layer_3{
+    .st0 {
+        fill: rgba(0, 0, 0, 0.47);
+    }
+}

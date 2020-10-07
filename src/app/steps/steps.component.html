@@ -1,0 +1,26 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+    <navbar-experiment [exp_name]="experiment.name" [exp_Id]="experiment.id"></navbar-experiment>
+    <div class="container expermints-container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="../../assets/images/vector/2.png" class="img-vector" />
+            </div>
+            <div class="col-lg-6 expermints-section">
+                <div class="expermint-details">
+                    <h3> :خطوات التجربة</h3>
+                    <ul>
+                        <li *ngFor="let s of experiment.steps">
+                            <i class="fas fa-dot-circle"></i>
+                            <span>{{ s }}</span>
+                        </li>
+                    </ul>
+                    <img src="../../assets/images/vector/4.svg" class="img-abs" />
+                </div>
+                <button class="button-login" id="try" #try (click)="tryByYourSelf(experiment.exp)">
+                    <span _ngcontent-c1=""> جرب بنفسك </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>

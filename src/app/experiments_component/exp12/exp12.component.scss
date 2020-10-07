@@ -1,0 +1,66 @@
+    @import '../../../assets/scss/sharedExpDesign.scss';
+    .tools {
+        text-align: center;
+        height: 55vh;
+    }
+    
+    #Capa_1 {
+        width: 70px;
+        height: 40px;
+        opacity: 0;
+    }
+    
+    .waterPlace {
+        width: 30%;
+        #tap {
+            width: 90%;
+        }
+    }
+    
+    .water_falling {
+        width: 6%;
+        position: relative;
+        top: 0%;
+        left: -36%;
+        z-index: 2;
+        opacity: 0;
+    }
+    #hitplace {
+        margin: 0;
+        // background-color: blanchedalmond;
+        width: 2%;
+        height: 6%;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+    }
+    
+    .col-4,
+    .col-3,
+    .col-5 {
+        margin: 1%;
+        img {
+            width: 100%
+        }
+    }
+    
+    #flower {
+        img {
+            width: 25%;
+        }
+    }
+    
+    #spoon {
+        img {
+            width: 180%;
+        }
+    }
+    
+    #backVideo {
+        cursor: pointer;
+    }
+    
+    .modal {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }

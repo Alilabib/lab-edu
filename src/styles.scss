@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';*/
+
+@import "~bootstrap/scss/bootstrap";
+
+// Fonts
+//----------------------------------*/
+@import 'assets/scss/_fonts.scss';
+
+
+*{
+    font-family: 'Strip-Arabic', sans-serif;
+}
+
+/* shared CSS */
+.alert{
+    width: 50%;
+    text-align: center;
+    margin:0 auto 5% auto;
+}
+
+.tooltip.show {
+    opacity: 1 !important;;
+}

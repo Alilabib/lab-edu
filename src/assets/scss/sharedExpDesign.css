@@ -1,0 +1,99 @@
+#main {
+  background-size: cover;
+  background-image: url("../../../assets/bg.png");
+  height: 100vh;
+}
+
+.container {
+  margin: 7.5vw auto 0 auto;
+}
+
+.p-2 {
+  padding: 0.5rem 1rem !important;
+}
+
+.flex-fill {
+  margin-right: 3%;
+}
+
+.flex-grow-1 .row {
+  height: 98%;
+}
+
+#secondbg[_ngcontent-c1] {
+  background-color: red;
+}
+
+.workSpace {
+  background-image: url("../../../assets/workspace_bg.png");
+  border: #a7027d 10px solid;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 5%;
+  height: 60vh;
+}
+
+.workSpace a {
+  position: absolute;
+  bottom: 2%;
+  color: purple;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.workSpace span {
+  position: relative;
+  bottom: 55px;
+  color: white;
+  background-color: purple;
+  background-image: linear-gradient(to right, #9f57a0, #61037e);
+  padding: 1.5% 5%;
+  border-radius: 5px;
+}
+
+.workSpace span img {
+  width: 2rem;
+  position: absolute;
+  top: 5%;
+  left: -15px;
+}
+
+.workSpace .row {
+  height: 80%;
+  align-items: center;
+}
+
+.tools {
+  background-color: #f2f2f2;
+  box-shadow: 3px 3px #b5b5b5;
+  width: 17vw;
+  height: 50vh;
+  padding: 8%;
+}
+
+.tool_header {
+  background-color: #91027d;
+  background-image: radial-gradient(#d853a7, #c1037e, #91027d);
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 15px 15px 0px 0px;
+  padding: 3% 0;
+}
+
+.img_toolheader {
+  width: 55%;
+  position: absolute;
+  top: -94px;
+  right: -40px;
+}
+
+.toast {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 1.5rem;
+  color: gray;
+}

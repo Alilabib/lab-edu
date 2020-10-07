@@ -1,0 +1,99 @@
+@import '../../../assets/scss/sharedExpDesign.scss';
+.col-3 {
+    align-self: center;
+    padding: 1%;
+    // margin: 10%;
+    img {
+        width: 30%;
+    }
+}
+
+#paper {
+    align-self: center;
+    padding: 1%;
+    margin: 10%;
+    img {
+        width: 20%;
+    }
+}
+
+#paper1 {
+    align-self: center;
+    padding: 1%;
+    margin: 10%;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    left: 30%;
+    img {
+        width: 50%;
+    }
+}
+
+#paper2 {
+    align-self: center;
+    padding: 1%;
+    margin: 10%;
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    left: 15%;
+    img {
+        width: 50%;
+    }
+}
+
+#paper3 {
+    align-self: center;
+    padding: 1%;
+    margin: 10%;
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    left: 20%;
+    img {
+        width: 50%;
+    }
+}
+
+#battery {
+    align-self: center;
+    padding: 1%;
+    margin: 10%;
+    img {
+        width: 85%;
+        position: relative;
+        left: 25%;
+    }
+}
+
+#batteryhit {
+    margin: 0;
+    font-size: 15%;
+    bottom: 90%;
+    position: absolute;
+    left: 80%;
+}
+
+#batteryhit1 {
+    margin: 0;
+    font-size: 15%;
+    bottom: 2%;
+    position: absolute;
+    left: 80%;
+}
+
+#backVideo {
+    cursor: pointer;
+}
+
+.papers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

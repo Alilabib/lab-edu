@@ -1,0 +1,82 @@
+<div id="main" class="display-flex height-100vh back-image flex-colum">
+
+    <navbar-experiment [exp_name]="title" [exp_Id]="exp_Id"></navbar-experiment>
+    <!-- (click)="Close()" -->
+    <div #container class="container  expermints-container">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight workSpace" id="workSpace">
+                <div class="row">
+                    <div class="col-12">
+                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+
+                            <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+
+                                <div class="toast-body" id="drag">
+                                    قم بسحب الأدوات إلى هنا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" (click)="GoNext()" id="next" class="next"> التجربة التالية</a>
+                <a type="button" (click)="BackToSteps()" class="back">
+                    عودة إلى شرح التجربة
+                </a>
+            </div>
+            <div class="p-2 flex-shrink-1 bd-highlight tools-section">
+                <div class="tool_header">
+                    <div class="col"> أدوات التجربة </div>
+                </div>
+                <!--tools-->
+                <div class="tools">
+                    <div class="row justify-content-center">
+
+                        <div #item class="col-4 tool" id="funnel">
+                            <img data-toggle="tooltip" data-placement="top" title="قمع" src="assets/exp14/funnel.png">
+                        </div>
+                        <div #item class="col-4 tool" id="basin">
+                            <img data-toggle="tooltip" data-placement="top" title="حوض زجاجى" src="assets/exp14/basin.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div #item class="col-4 tool" id="Mercury">
+                            <img data-toggle="tooltip" data-placement="top" title="زئبق" src="assets/exp14/mercury.png">
+                        </div>
+
+                        <div #item class="col-4 tool" id="cover">
+                            <img data-toggle="tooltip" data-placement="top" title="غطاء " src="assets/exp14/cover.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div #item class="col-4 tool" id="ruler">
+                            <img data-toggle="tooltip" data-placement="top" title="مسطرة" style="width: 20%;" src="assets/exp14/ruler.png">
+                            <p id="timer1">
+                                <span>76 </span> سم
+                            </p>
+                        </div>
+
+                        <div #item class="col-4 tool" id="tube">
+                            <img data-toggle="tooltip" style="width: 40%;" data-placement="top" title="انبوبة" src="assets/exp14/tube.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="fixed-right" src="../../assets/images/vector/icon.png">
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="Exp_End" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../../../assets/images/vector/1.gif" />
+                <h6>أحسنت، أنت عملت التجربة بشكل صحيح وحصلت على النتيجة النهائية المطلوبة</h6>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="stop()">
+                  <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
